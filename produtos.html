@@ -1,0 +1,9 @@
+{foreach $meusProdutos as $prod}
+	<div style='float:left; width:200px; min-height:200px; margin-top:10px;'>
+		<img src='administrador/produtos/{$prod.idprod}.jpg' width='150px'/>
+		<p class='formatatexto'>{$prod.descricaopro}</p>
+		<p class='formatamoeda'>R$ {$prod.precopro}</p>
+		<p><a class='lnk' href='detalhes.php?idprod={$prod.idprod}'>|Detalhes|</a></p>
+		<p></p>
+	</div>
+{/foreach}
